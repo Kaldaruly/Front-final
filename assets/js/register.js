@@ -18,7 +18,7 @@ submitBtn.addEventListener('click', async(e) => {
            password: inputPassword.value
         })
     }).then(res => {
-        if (res.status === 500) {
+        if (res.status) {
             window.location.href = '/login.html'
 
             window.localStorage.setItem('userInfo', JSON.stringify({
