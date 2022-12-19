@@ -18,7 +18,7 @@ submitBtn.addEventListener("click", async (e) => {
       password: inputPassword.value,
     }),
   }).then((res) => {
-    if (res.status === 500) {
+    if (res.status) {
       if (
         user.password !== inputPassword.value || 
         user.email !== inputEmail.value
